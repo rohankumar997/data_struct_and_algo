@@ -32,7 +32,7 @@ def getListOfProcessSortedByMemory():
 
 def main():
 
-    print('###### Create a list of all running processes ######')
+    print('##### Create a list of all running processes ######')
     getListOfProcessSortedByMemory()
 
 if __name__ == '__main__':
