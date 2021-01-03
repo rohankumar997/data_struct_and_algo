@@ -2,13 +2,13 @@ import sys
 
 
 class Stack:
-    # initializ the constructor of empty array
+    # initialize the constructor of empty array
     def __init__(self,arr,limit):
         self.arr=arr
         self.arr = []
         self.limit = limit
 
-    # defining an menthod to get all the elements in the que
+    # defining an method to get all the elements in the que
     def print_elements(self):
         for i in range(len(self.arr)):
             print(self.arr[i])
@@ -23,10 +23,10 @@ class Stack:
             print("elements are : ")
             for i in range(len(self.arr)):
                 print(self.arr[i])
-            print("stack overflow occured")
+            print("stack overflow occurred")
             sys.exit()
 
-    # defining an menthod to pop an element from the array
+    # defining an method to pop an element from the array
     def pop(self):
         self.arr.pop()
 
@@ -38,7 +38,7 @@ class Stack:
         else:
             print("array is not empty")
 
-    # defining an menthod to get the top element
+    # defining an method to get the top element
     def top(self):
         n = len(self.arr)
         return self.arr[n]
@@ -56,7 +56,7 @@ sta.push(2)
 sta.push(2)
 # printing all the elements in the stack
 sta.print_elements()
-# poping the element from the array
+# popping the element from the array
 sta.pop()
 
 # printing all the elements in the stack
