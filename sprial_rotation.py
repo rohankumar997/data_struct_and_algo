@@ -1,37 +1,24 @@
-def Spiral_Rotation_array(mat, m, n):
-    direction = 0
-    T = 0
-    B = m - 1
-    L = 0
-    R = n - 1
-    counter = 0
-    while T <= B and L <= R and counter <= m * n:
-        if direction == 0:
-            for i in range(L, R + 1):
-                print(mat[T][i], end=" ")
-            T += 1
-            direction = 1
+def sprialMatrix(arr,m,n):
+    k=0
+    l=0
+    while k<m and l<n:
 
-        if direction == 1:
-            for i in range(T, B + 1):
-                print(mat[i][R], end=" ")
-            R -= 1
-            direction = 2
+        for i in range(l,n):
+            print(arr[k][i],end=" ")
+        k+=1
 
-        if direction == 2:
-            for i in range(R, L - 1, -1):
-                print(mat[B][i], end=" ")
-            B -= 1
-            direction = 3
+        for i in range(k,m):
+            print(arr[i][n-1],end=" ")
+        n-=1
 
-        if direction == 3:
-            for i in range(B, T - 1, -1):
-                print(mat[i][L], end=" ")
-            L += 1
-            direction = 0
-        counter += 1
+        if k<m:
+            for i in range(n-1,l-1,-1):
+                print(arr[m-1][i],end=" ")
+            m-=1
+        if l<n:
+            for i in range(m-1,k-1,-1):
+                print(arr[i][l],end=" ")
+            l+=1
 
+sprialMatrix([[1,2,3],[4,5,6],[7,8,9]],3,3)
 
-Sprial_Rotation_arry([[1, 2, 3, 4, 5, 6],
-                      [7, 8, 9, 10, 11, 12],
-                      [13, 14, 15, 16, 17, 18]], 3, 6)
