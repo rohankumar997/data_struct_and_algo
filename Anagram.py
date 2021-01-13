@@ -1,20 +1,20 @@
 def SortAnagram(arr):
     temp = []
     stage = []
-    # dic = {}
-    dic=[]
+    dic = []
+
     for i in arr:
         for j in i:
             stage.append(j)
         stage.sort()
         temp.append(''.join(stage))
         stage = []
-    # temp.sort()
-    for index, value in enumerate(temp):
-        dic.append([index,value])
 
-    temp=[]
-    dic = sorted ( dic , key = lambda x : x[1])
+    for index, value in enumerate(temp):
+        dic.append([index, value])
+
+    temp = []
+    dic = sorted(dic, key=lambda x: x[1])
     for i in range(len(dic)):
         stage.append(dic[i][0])
 
@@ -24,7 +24,7 @@ def SortAnagram(arr):
     print(temp)
 
 
-arr=["cat","dog","tac","god","act"]
+arr = ["cat", "dog", "tac", "god", "act"]
 # act , dgo , act , dgo , act
 
 
