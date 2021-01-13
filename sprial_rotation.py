@@ -20,5 +20,7 @@ def sprialMatrix(arr,m,n):
                 print(arr[i][l],end=" ")
             l+=1
 
+
+#function calling
 sprialMatrix([[1,2,3],[4,5,6],[7,8,9]],3,3)
 
