@@ -25,7 +25,5 @@ def SortAnagram(arr):
 
 
 arr = ["cat", "dog", "tac", "god", "act"]
-# act , dgo , act , dgo , act
-
 
 SortAnagram(arr)
