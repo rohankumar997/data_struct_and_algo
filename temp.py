@@ -18,22 +18,25 @@
 # ron.welcome()
 
 
-class incr():
-    def itr(self):
-        self.a=1
+# class incr():
+#     def itr(self):
+#         self.a=1
 
     
-    def next(self):
-        if self.a <=5:
-            print(self.a)
-            self.a+=1
-        else:
-            raise StopIteration
+#     def next(self):
+#         if self.a <=5:
+#             print(self.a)
+#             self.a+=1
+#         else:
+#             raise StopIteration
 
-zip=incr()
-zip.itr()
-zip.next()
-zip.next()
-zip.next()
-zip.next()
-zip.next()
+# zip=incr()
+# zip.itr()
+# zip.next()
+# zip.next()
+# zip.next()
+# zip.next()
+# zip.next()
+theBoard = [' '] * 10
+
+print(theBoard)
