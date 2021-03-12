@@ -129,6 +129,8 @@ def isBoardFull(board):
         if isSpaceFree(board, i):
             return False
     return True
+
+
 print('Welcome to Tic Tac Toe!')
 
 while True:
@@ -157,6 +159,7 @@ while True:
                 else:
                     turn = 'computer'
         else:
+
             # Computer’s turn.
             move = getComputerMove(theBoard, computerLetter)
             makeMove(theBoard, computerLetter, move)
