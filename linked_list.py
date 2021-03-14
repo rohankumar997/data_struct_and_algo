@@ -1,62 +1,54 @@
+#linked list creation
+#singly linked list 
 
-# # A simple Python program for traversal of a linked list
-#
-# # Node class
-# class NODE:
-#     # Function to initialise the node object
-#     def __init__(self,data):
-#         self.data = data
-#         self.next = None
-#
-# # Linked List class contains a Node object
-# class LINKED_LIST():
-#     # Function to initialize head
-#     def __init__(self):
-#         self.head = None
-#
-#     # This function prints contents of linked list
-#     def print_list(self):
-#         temp = self.head
-#         while(temp):
-#             print(temp.data)
-#             temp=temp.next
-#
-#
-# LISTT =  LINKED_LIST()
-#
-# LISTT.head = NODE(1)
-# second = NODE(6)
-# third = NODE(3)
-#
-# LISTT.head.next = second
-# second.next = third
-#
-# LISTT.print_list()
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
 
-
-class Node():
-    def __init__(self,data=None):
-        self.data = data
-        self.next = None
-
-class LinkedList():
+class LinkedList:
     def __init__(self):
         self.head=None
 
-    def print_list(self):
-        temp=self.head
-        while temp is not None:
-            print(temp.data)
-            temp=temp.next
+    def PrintList(self):
+        if self.head is not None:
+            itr=self.head
+            while itr:
+                print(itr.data,end="-->")
+                itr=itr.next
 
 
-e1=LinkedList()
-e1.head=Node(1)
 
-e2=Node(2)
-e3=Node(3)
+if __name__=='__main__':
+#creating empty linked list
+    l=LinkedList()
+#assigning the first node to head of linked list     
+    l.head=Node(1)
+#assigining the second node    
+    l2=Node(2)
+#assigining the third node
+    l3=Node(3)
 
-e1.head.next=e2
-e2.next=e3
+#linking the first node to the second
+    l.head.next=l2
+#linking the second node to the third
+    l2.next=l3
 
-print(e1.print_list())
+#printing the list 
+    l.PrintList()
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
