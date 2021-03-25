@@ -33,3 +33,5 @@ arr=[0, 1, 2, 0, 1, 2]
 n=len(arr)
 sort_num(arr,n)
 print_arr(arr,n)
+
+
